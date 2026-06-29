@@ -44,7 +44,7 @@ class View(ft.UserControl):
         row1 = ft.Row([self.ddyear, self.ddshape, self.btn_graph, self.btn_path],
                       alignment=ft.MainAxisAlignment.SPACE_EVENLY)
         self._page.controls.append(row1)
-
+        self._controller.fill_ddyear()
         # List View where the reply is printed
         self.txt_result1 = ft.ListView(width=400, expand=1, spacing=10, padding=20, auto_scroll=False)
         self.txt_result2 = ft.ListView(width=400, expand=1, spacing=10, padding=20, auto_scroll=False)
